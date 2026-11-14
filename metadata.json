@@ -1,0 +1,6 @@
+{
+  "name": "Takamiya Store",
+  "description": "Platform top-up game digital resmi untuk Mobile Legends, Free Fire, Genshin Impact, Wuthering Waves, dan Neverness to Everness dengan cek ID real-time dan pembayaran DANA & QRIS.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
