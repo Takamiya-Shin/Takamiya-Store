@@ -26,7 +26,8 @@ export interface ProductItem {
   amountLabel: string;
   bonusLabel?: string;
   price: number;
-  iconType: 'diamond-ml' | 'diamond-ff' | 'crystal-gi' | 'lunite-ww' | 'esper-nte' | 'pass';
+  iconType: 'diamond-ml' | 'diamond-ff' | 'crystal-gi' | 'gi-welkin' | 'gi-gnostic' | 'lunite-ww' | 'ww-sub' | 'ww-insider' | 'ww-connoisseur' | 'esper-nte' | 'nte-monthly' | 'nte-pass' | 'wdp' | 'ff-weekly' | 'ff-monthly' | 'pass';
+  imageUrl?: string;
   tag?: string;
 }
 

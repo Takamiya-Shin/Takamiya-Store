@@ -37,7 +37,7 @@ export const GAME_CATALOG: GameConfig[] = [
       { id: '7', gameId: 'mobile-legends', name: '257 Diamonds (234 + 23 Bonus)', amountLabel: 'Mobile Legends', price: 72000, iconType: 'diamond-ml' },
       { id: '8', gameId: 'mobile-legends', name: '344 Diamonds (312 + 32 Bonus)', amountLabel: 'Mobile Legends', price: 96000, iconType: 'diamond-ml' },
       { id: '9', gameId: 'mobile-legends', name: '514 Diamonds (468 + 46 Bonus)', amountLabel: 'Mobile Legends', price: 142000, iconType: 'diamond-ml' },
-      { id: '10', gameId: 'mobile-legends', name: 'Weekly Diamond Pass', amountLabel: 'Mobile Legends', price: 29500, iconType: 'pass', tag: 'Hemat' },
+      { id: '10', gameId: 'mobile-legends', name: 'Weekly Diamond Pass', amountLabel: 'Mobile Legends', price: 29500, iconType: 'wdp', tag: 'Hemat' },
     ],
   },
   {
@@ -60,8 +60,8 @@ export const GAME_CATALOG: GameConfig[] = [
       { id: '16', gameId: 'free-fire', name: '355 Diamonds', amountLabel: 'Free Fire', price: 48000, iconType: 'diamond-ff' },
       { id: '17', gameId: 'free-fire', name: '720 Diamonds', amountLabel: 'Free Fire', price: 95000, iconType: 'diamond-ff' },
       { id: '18', gameId: 'free-fire', name: '1450 Diamonds', amountLabel: 'Free Fire', price: 190000, iconType: 'diamond-ff' },
-      { id: '19', gameId: 'free-fire', name: 'Membership Mingguan', amountLabel: 'Free Fire', price: 30000, iconType: 'pass', tag: 'Hemat' },
-      { id: '20', gameId: 'free-fire', name: 'Membership Bulanan', amountLabel: 'Free Fire', price: 85000, iconType: 'pass', tag: 'Populer' },
+      { id: '19', gameId: 'free-fire', name: 'Membership Mingguan', amountLabel: 'Free Fire', price: 30000, iconType: 'ff-weekly', tag: 'Hemat' },
+      { id: '20', gameId: 'free-fire', name: 'Membership Bulanan', amountLabel: 'Free Fire', price: 85000, iconType: 'ff-monthly', tag: 'Populer' },
     ],
   },
   {
@@ -85,10 +85,10 @@ export const GAME_CATALOG: GameConfig[] = [
       { id: '24', gameId: 'genshin-impact', name: '1980 + 260 Genesis Crystals', amountLabel: 'Genshin Impact', price: 450000, iconType: 'crystal-gi' },
       { id: '25', gameId: 'genshin-impact', name: '3280 + 600 Genesis Crystals', amountLabel: 'Genshin Impact', price: 740000, iconType: 'crystal-gi' },
       { id: '26', gameId: 'genshin-impact', name: '6480 + 1600 Genesis Crystals', amountLabel: 'Genshin Impact', price: 1480000, iconType: 'crystal-gi', tag: 'Best Value' },
-      { id: '27', gameId: 'genshin-impact', name: 'Blessing of the Welkin Moon', amountLabel: 'Genshin Impact', price: 73000, iconType: 'pass', tag: 'Favorit' },
-      { id: '28', gameId: 'genshin-impact', name: '2x Blessing of the Welkin Moon', amountLabel: 'Genshin Impact', price: 146000, iconType: 'pass' },
-      { id: '29', gameId: 'genshin-impact', name: '3x Blessing of the Welkin Moon', amountLabel: 'Genshin Impact', price: 219000, iconType: 'pass' },
-      { id: '30', gameId: 'genshin-impact', name: 'Gnostic Hymn (Battle Pass)', amountLabel: 'Genshin Impact', price: 155000, iconType: 'pass', tag: 'Populer' },
+      { id: '27', gameId: 'genshin-impact', name: 'Blessing of the Welkin Moon', amountLabel: 'Genshin Impact', price: 73000, iconType: 'gi-welkin', tag: 'Favorit' },
+      { id: '28', gameId: 'genshin-impact', name: '2x Blessing of the Welkin Moon', amountLabel: 'Genshin Impact', price: 146000, iconType: 'gi-welkin' },
+      { id: '29', gameId: 'genshin-impact', name: '3x Blessing of the Welkin Moon', amountLabel: 'Genshin Impact', price: 219000, iconType: 'gi-welkin' },
+      { id: '30', gameId: 'genshin-impact', name: 'Gnostic Hymn (Battle Pass)', amountLabel: 'Genshin Impact', price: 155000, iconType: 'gi-gnostic', tag: 'Populer' },
     ],
   },
   {
@@ -112,10 +112,10 @@ export const GAME_CATALOG: GameConfig[] = [
       { id: '34', gameId: 'wuthering-waves', name: '1980 + 260 Lunites', amountLabel: 'Wuthering Waves', price: 450000, iconType: 'lunite-ww' },
       { id: '35', gameId: 'wuthering-waves', name: '3280 + 600 Lunites', amountLabel: 'Wuthering Waves', price: 740000, iconType: 'lunite-ww' },
       { id: '36', gameId: 'wuthering-waves', name: '6480 + 1600 Lunites', amountLabel: 'Wuthering Waves', price: 1480000, iconType: 'lunite-ww', tag: 'Best Value' },
-      { id: '37', gameId: 'wuthering-waves', name: 'Lunite Subscription (30 Hari)', amountLabel: 'Wuthering Waves', price: 73000, iconType: 'pass', tag: 'Favorit' },
-      { id: '38', gameId: 'wuthering-waves', name: '2x Lunite Subscription', amountLabel: 'Wuthering Waves', price: 146000, iconType: 'pass' },
-      { id: '39', gameId: 'wuthering-waves', name: 'Insider Channel (Battle Pass)', amountLabel: 'Wuthering Waves', price: 155000, iconType: 'pass', tag: 'Populer' },
-      { id: '40', gameId: 'wuthering-waves', name: 'Connoisseur Channel (BP Plus)', amountLabel: 'Wuthering Waves', price: 310000, iconType: 'pass' },
+      { id: '37', gameId: 'wuthering-waves', name: 'Lunite Subscription (30 Hari)', amountLabel: 'Wuthering Waves', price: 73000, iconType: 'ww-sub', tag: 'Favorit' },
+      { id: '38', gameId: 'wuthering-waves', name: '2x Lunite Subscription', amountLabel: 'Wuthering Waves', price: 146000, iconType: 'ww-sub' },
+      { id: '39', gameId: 'wuthering-waves', name: 'Insider Channel (Battle Pass)', amountLabel: 'Wuthering Waves', price: 155000, iconType: 'ww-insider', tag: 'Populer' },
+      { id: '40', gameId: 'wuthering-waves', name: 'Connoisseur Channel (BP Plus)', amountLabel: 'Wuthering Waves', price: 310000, iconType: 'ww-connoisseur' },
     ],
   },
   {
@@ -139,10 +139,10 @@ export const GAME_CATALOG: GameConfig[] = [
       { id: '44', gameId: 'neverness-to-everness', name: '1980 + 260 Ether Crystals', amountLabel: 'Neverness to Everness', price: 450000, iconType: 'esper-nte' },
       { id: '45', gameId: 'neverness-to-everness', name: '3280 + 600 Ether Crystals', amountLabel: 'Neverness to Everness', price: 740000, iconType: 'esper-nte' },
       { id: '46', gameId: 'neverness-to-everness', name: '6480 + 1600 Ether Crystals', amountLabel: 'Neverness to Everness', price: 1480000, iconType: 'esper-nte', tag: 'Best Value' },
-      { id: '47', gameId: 'neverness-to-everness', name: 'Hethereau Monthly Pass', amountLabel: 'Neverness to Everness', price: 73000, iconType: 'pass', tag: 'Baru' },
-      { id: '48', gameId: 'neverness-to-everness', name: '2x Hethereau Monthly Pass', amountLabel: 'Neverness to Everness', price: 146000, iconType: 'pass' },
-      { id: '49', gameId: 'neverness-to-everness', name: 'Anomaly Hunter Pass (BP)', amountLabel: 'Neverness to Everness', price: 155000, iconType: 'pass', tag: 'Populer' },
-      { id: '50', gameId: 'neverness-to-everness', name: 'Collector Vehicle Skin Bundle', amountLabel: 'Neverness to Everness', price: 250000, iconType: 'pass' },
+      { id: '47', gameId: 'neverness-to-everness', name: 'Hethereau Monthly Pass', amountLabel: 'Neverness to Everness', price: 73000, iconType: 'nte-monthly', tag: 'Baru' },
+      { id: '48', gameId: 'neverness-to-everness', name: '2x Hethereau Monthly Pass', amountLabel: 'Neverness to Everness', price: 146000, iconType: 'nte-monthly' },
+      { id: '49', gameId: 'neverness-to-everness', name: 'Anomaly Hunter Pass (BP)', amountLabel: 'Neverness to Everness', price: 155000, iconType: 'nte-pass', tag: 'Populer' },
+      { id: '50', gameId: 'neverness-to-everness', name: 'Collector Vehicle Skin Bundle', amountLabel: 'Neverness to Everness', price: 250000, iconType: 'nte-pass' },
     ],
   },
 ];
@@ -167,6 +167,36 @@ export function mapCategoryToGameId(category: string): GameId {
 
 export function inferIconType(gameId: GameId, productName: string): ProductItem['iconType'] {
   const n = productName.toLowerCase();
+  if (n.includes('weekly diamond') || n.includes('wdp')) {
+    return 'wdp';
+  }
+  if (gameId === 'free-fire' && (n.includes('mingguan') || n.includes('weekly'))) {
+    return 'ff-weekly';
+  }
+  if (gameId === 'free-fire' && (n.includes('bulanan') || n.includes('monthly'))) {
+    return 'ff-monthly';
+  }
+  if (gameId === 'genshin-impact' && n.includes('welkin')) {
+    return 'gi-welkin';
+  }
+  if (gameId === 'genshin-impact' && (n.includes('gnostic') || n.includes('hymn') || n.includes('battle pass'))) {
+    return 'gi-gnostic';
+  }
+  if (gameId === 'wuthering-waves' && n.includes('subscription')) {
+    return 'ww-sub';
+  }
+  if (gameId === 'wuthering-waves' && n.includes('insider')) {
+    return 'ww-insider';
+  }
+  if (gameId === 'wuthering-waves' && n.includes('connoisseur')) {
+    return 'ww-connoisseur';
+  }
+  if (gameId === 'neverness-to-everness' && n.includes('monthly')) {
+    return 'nte-monthly';
+  }
+  if (gameId === 'neverness-to-everness' && (n.includes('anomaly') || n.includes('bundle') || n.includes('pass'))) {
+    return 'nte-pass';
+  }
   if (
     n.includes('pass') ||
     n.includes('membership') ||

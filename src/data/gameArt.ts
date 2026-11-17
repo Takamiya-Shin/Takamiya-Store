@@ -1,17 +1,11 @@
-import heroBanner from '../assets/images/hero_takamiya_esports_1794619154280.jpg';
-import mlArt from '../assets/images/game_mobile_legends_1794619154001.jpg';
-import ffArt from '../assets/images/game_free_fire_1794619153944.jpg';
-import giArt from '../assets/images/game_genshin_impact_1794619154606.jpg';
-import wwArt from '../assets/images/game_wuthering_waves_1794619154660.jpg';
-import nteArt from '../assets/images/game_nte_anomaly_1794619155199.jpg';
 import { GameId } from '../types/store';
 
-export const HERO_ART = heroBanner;
+export const HERO_ART = '/assets/aistudio/Banner_Takamiya_Store_6ff5ed64.png';
 
 export const GAME_ART: Record<GameId, string> = {
-  'mobile-legends': mlArt,
-  'free-fire': ffArt,
-  'genshin-impact': giArt,
-  'wuthering-waves': wwArt,
-  'neverness-to-everness': nteArt,
+  'mobile-legends': '/assets/aistudio/images_5cc92285.jpg',
+  'free-fire': '/assets/aistudio/image_b7849284.png',
+  'genshin-impact': '/assets/aistudio/images__2__33516fd3.jpg',
+  'wuthering-waves': '/assets/aistudio/images__4__174e7805.jpg',
+  'neverness-to-everness': '/assets/aistudio/images__3__419137e2.jpg',
 };

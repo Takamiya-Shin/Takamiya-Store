@@ -208,6 +208,12 @@ export const api = {
           else if (n.includes('hethereau monthly')) tag = 'Baru';
           else if (n.includes('pass') || n.includes('bulanan') || n.includes('channel')) tag = 'Populer';
 
+          const rawImg = typeof row.image_url === 'string' ? row.image_url.trim() : '';
+          const imageUrl =
+            rawImg && !rawImg.includes('via.placeholder.com') && !rawImg.includes('ibb.co')
+              ? rawImg
+              : undefined;
+
           return {
             id: String(row.id),
             gameId,
@@ -215,6 +221,7 @@ export const api = {
             amountLabel: row.category,
             price: Number(row.price),
             iconType: inferIconType(gameId, row.name),
+            imageUrl,
             tag,
           };
         });

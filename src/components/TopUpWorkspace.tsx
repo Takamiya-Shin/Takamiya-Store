@@ -280,14 +280,13 @@ export function TopUpWorkspace({ onNavigate }: TopUpWorkspaceProps) {
                     : 'border-[#262B38] bg-[#13161E] hover:border-zinc-600 hover:-translate-y-0.5'
                 }`}
               >
-                <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#0B0D12]">
+                <div className="relative aspect-square w-full overflow-hidden bg-[#0B0D12]">
                   <img
                     src={GAME_ART[game.id]}
                     alt={game.name}
-                    referrerPolicy="no-referrer"
-                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0B0D12] via-[#0B0D12]/25 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0B0D12]/60 via-transparent to-transparent" />
                 </div>
                 <div className="p-3.5">
                   <p className="font-display text-sm font-semibold text-white truncate">
@@ -315,8 +314,7 @@ export function TopUpWorkspace({ onNavigate }: TopUpWorkspaceProps) {
             <img
               src={GAME_ART[activeGame.id]}
               alt={activeGame.name}
-              referrerPolicy="no-referrer"
-              className="h-16 w-20 shrink-0 rounded-lg object-cover border border-[#262B38]"
+              className="h-16 w-16 shrink-0 rounded-lg object-cover object-center border border-[#262B38]"
             />
             <div className="min-w-0">
               <p className="text-xs font-medium text-amber-400">
@@ -346,7 +344,7 @@ export function TopUpWorkspace({ onNavigate }: TopUpWorkspaceProps) {
                   }`}
                 >
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-[#0B0D12] border border-[#262B38]">
-                    <CurrencyIcon type={product.iconType} />
+                    <CurrencyIcon type={product.iconType} imageUrl={product.imageUrl} alt={product.name} />
                   </div>
                   <div className="min-w-0 flex-1">
                     <div className="flex items-center justify-between gap-2">
@@ -731,7 +729,7 @@ export function TopUpWorkspace({ onNavigate }: TopUpWorkspaceProps) {
                     <td className="px-4 py-3">
                       <div className="flex items-center gap-3">
                         <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#0B0D12] border border-[#262B38]">
-                          <CurrencyIcon type={item.iconType} />
+                          <CurrencyIcon type={item.iconType} imageUrl={item.imageUrl} alt={item.name} />
                         </div>
                         <div className="min-w-0">
                           <p className="font-display font-semibold text-white">{item.name}</p>
